@@ -1,3 +1,43 @@
-<h1>
-  {{title}}
-</h1>
+<input type="checkbox" id="togglebox" />
+
+<nav id="offcanvas-menu">
+
+<div class="scroll" style="transform: translate3d(0px, 0px, 0px) scale(1);">
+  
+	<div class="spacer" style="width: 268px; height: 41px;"></div>
+
+	<div class="profile-menu">
+
+	<img src="http://localhost/img/DcZvLrSOSkOY0bkZXLgU_leonardo-6.jpg" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+	</div>
+
+</div>
+
+
+</nav>
+
+<div id="contentarea">
+  <label for="togglebox" id="navtoggler">Menu</label>
+
+<div *ngFor = 'let lst of iproducts'> 
+   <ul> 
+      <li>{{lst.ProductID}}</li> 
+      <li>{{lst.ProductName}}</li> 
+   </ul> 
+</div> 
+
+<div *ngFor = 'let lst of categorias'> 
+   <ul> 
+      <li>{{lst.id}}</li> 
+      <li>{{lst.nombre}}</li> 
+   </ul> 
+</div> 
+
+
+</div>
+
+
+
+
+
+
